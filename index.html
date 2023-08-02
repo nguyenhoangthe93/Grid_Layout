@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <style>
+      .grid-item {
+        background: #aaa;
+        /* height: 50px; */
+      }
+      .grid-container {
+        border: 1px solid;
+        height: 400px;
+        display: grid;
+        /* so luong cot grid-template-columns */
+        /* grid-template-columns: repeat(3, auto); */
+        grid-template-areas: 'myArea myArea . .' 'myArea myArea . .';
+        /* grid-column-gap: 20px; */
+        /* grid-row-gap: 30px; */
+        grid-gap: 50px 20px;
+        /* grid-template-columns: auto auto 100px; */
+        /* chieu cao hang grid-template-rows */
+        /* grid-template-rows: 100px 100px; */
+        /* start: phía trái, end:phía phải,space-between: khooảng cách giữa cột */
+        /* space-around: khooảng cách giữa cột đều,space-evenly */
+        /* justify-content: space-around; */
+
+        /* align-content: space-evenly; */
+      }
+      .grid-item1 {
+        /* 4-1: 3 : grid-column:  cot bat dau / cột kết thúc gộp, số lượng, kết thúc - bát dầu  */
+        /* grid-column: 1/3; */
+        /* grid-row: 1/4; */
+        /* grid-area: 1 / 1/ 4/3; */
+        grid-area: myArea;
+      }
+      .grid-item3 {
+        /* 4-1: 3 : grid-column:  cot bat dau / cột kết thúc gộp, số lượng, kết thúc - bát dầu  */
+        /* grid-column: 1/4; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item grid-item1">1</div>
+      <div class="grid-item grid-item2">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item grid-item3">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </body>
+</html>
